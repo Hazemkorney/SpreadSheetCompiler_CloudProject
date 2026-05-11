@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Spreadsheet Compiler</title>
+  <link rel="stylesheet" href="style-compiler.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <h1>Spreadsheet Compiler</h1>
+
+  <!-- FORM -->
+  <div class="card">
+    <h2>Compiler</h2>
+
+    <div class="row">
+      <input id="formulaInput" placeholder="=SUM(A1, MAX(B1:B5), 10)">
+
+      <button onclick="submitFormula()">Submit</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <p id="compilerStatus"></p>
+  </div>
+
+  <!-- TOKENS -->
+  <div class="card">
+    <h2>Tokens</h2>
+    <div id="tokens">No tokens yet</div>
+  </div>
+
+  <!-- AST -->
+  <div class="card split">
+    <div>
+      <h2>AST Tree</h2>
+      <pre id="tree">No AST</pre>
+    </div>
+
+    <div>
+      <h2>AST JSON</h2>
+      <pre id="astJson">No AST JSON</pre>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div class="card">
+    <h3>Result</h3>
+    <div id="result" class="result-box">No result yet</div>
+  </div>
+
+  <!-- ERRORS -->
+  <div class="card">
+    <h2>Errors</h2>
+    <div id="errors">No errors</div>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="card">
+    <h2>History</h2>
+    <div id="history">No history</div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
