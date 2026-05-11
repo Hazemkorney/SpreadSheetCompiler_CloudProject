@@ -1,0 +1,177 @@
+
+
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #0f1115;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+/* layout */
+.layout {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.card {
+  border: 1px solid #2a2e39;
+  background: #151922;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+/* inputs */
+input {
+  background: #0f131c;
+  color: #f9fafb;
+  border: 1px solid #31384a;
+  border-radius: 6px;
+  padding: 8px;
+  width: 300px;
+  outline: none;
+}
+
+/* buttons */
+button {
+  background: #2563eb;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* AST */
+pre {
+  background: #0a0c11;
+  color: #e5e7eb;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  min-height: 140px;
+  border: 1px solid #1f2937;
+}
+
+/* errors */
+.error {
+  color: #fca5a5;
+  margin: 4px 0;
+}
+
+/* history */
+#history div {
+  margin: 4px 0;
+  color: #cbd5e1;
+}
+
+
+
+.token-wrap {
+  display: flex;              
+  gap: 10px;
+
+  padding: 12px;
+  border-radius: 10px;
+
+  background: #0f131c;
+  border: 1px solid #1f2937;
+}
+
+/* token cell */
+.token {
+  display: inline-flex;       
+  flex-direction: column;
+
+  gap: 6px;
+
+  min-width: 140px;          
+  max-width: 180px;
+
+  padding: 10px;
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.06); 
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.2s ease;
+  word-break: break-word;
+}
+
+/* hover */
+.token:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.15);
+}
+
+/* type label */
+.token::before {
+  content: attr(data-type);
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.85;
+  letter-spacing: 0.5px;
+}
+
+/* value */
+.token-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+.token-number {
+  background: linear-gradient(135deg, #8b5cf6, #a855f7);
+}
+
+.token-function {
+  background: linear-gradient(135deg, #10b981, #22c55e);
+}
+
+.token-cell_ref {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.token-plus,
+.token-minus,
+.token-star,
+.token-slash {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.token-gte,
+.token-lte,
+.token-gt,
+.token-lt,
+.token-equals {
+  background: linear-gradient(135deg, #ef4444, #fb7185);
+}
+
+.result-box {
+  background: #0f131c;
+  border: 1px solid #1f2937;
+  border-radius: 8px;
+
+  padding: 12px;
+  min-height: 40px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: #a7f3d0;
+
+  display: flex;
+  align-items: center;
+
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
+}
