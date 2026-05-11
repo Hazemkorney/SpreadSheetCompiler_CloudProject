@@ -1,0 +1,81 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 3, 2026, 11:45:17 PM
+    Author     : elprofesser
+*/
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: radial-gradient(circle at top, #151922, #0f1115);
+  color: #e5e7eb;
+  margin: 0;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* card */
+.card {
+  width: 360px;
+  background: #151922;
+  border: 1px solid #2a2e39;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  margin-bottom: 16px;
+}
+
+/* inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #31384a;
+  background: #0f131c;
+  color: white;
+}
+
+input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+/* button */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* links */
+a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #60a5fa;
+}
+
+.status {
+  color: #fca5a5;
+  margin-top: 8px;
+}
